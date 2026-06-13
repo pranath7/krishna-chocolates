@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Krishna Chocolates — Chennai's #1 wholesale destination for premium imported chocolates, luxury confectionery & drinks. 100+ global brands. Bulk orders only. WhatsApp for instant pricing.">
+    <meta name="keywords" content="wholesale chocolates Chennai, imported chocolates India, bulk chocolate supplier, Ferrero wholesale, Lindt wholesale, Sowcarpet chocolates, Krishna Chocolates">
+    <meta name="author" content="Krishna Chocolates">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Krishna Chocolates — Premium Imported Chocolates | Wholesale Only">
+    <meta property="og:description" content="Chennai's #1 wholesale destination for premium imported chocolates, luxury confectionery & drinks. 100+ global brands available in bulk.">
+    <meta property="og:type" content="website">
+    <title>Krishna Chocolates — Premium Imported Chocolates | Wholesale Only | Chennai</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- NAVBAR -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-monogram">K</span>
+                <span class="logo-text">Krishna Chocolates</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#media-feed" class="nav-link">Media</a></li>
+                <li><a href="#products" class="nav-link">Categories</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#cta-banner" class="nav-link">Order Now</a></li>
+            </ul>
+
+            <a href="https://wa.me/916382500922?text=Hi%20Krishna%20Chocolates!%20I'd%20like%20to%20know%20about%20wholesale%20pricing." class="nav-whatsapp" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Order on WhatsApp</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section class="hero" id="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <img src="hero_background.png" alt="Premium imported chocolates display" class="hero-bg-img" loading="eager">
+
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span>🏭 Wholesale Only · Imported Brands</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="typewriter-text"></span>
+                <span class="typewriter-cursor">|</span>
+            </h1>
+
+            <p class="hero-subtitle reveal">
+                Premium imported chocolates, luxury confectionery &amp; drinks — available in bulk across Chennai &amp; all over Tamilnadu, Telangana and Andhra Pradesh. Chennai's <strong>#1 wholesale chocolate destination</strong>.
+            </p>
+
+            <div class="hero-ctas reveal">
+                <a href="#products" class="btn btn-outline">Browse Categories</a>
+                <a href="https://wa.me/916382500922?text=Hi%20Krishna%20Chocolates!%20I'd%20like%20to%20get%20wholesale%20pricing." class="btn btn-gold" target="_blank" rel="noopener">Get Wholesale Price →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- VIDEOS & REELS FEED SECTION -->
+    <!-- ============================================ -->
+    <section class="video-feed-section" id="media-feed">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Reels &amp; Shorts</h2>
+            <p class="section-subtitle-text reveal">Watch our viral wholesale updates, luxury chocolate unboxings, and product reviews directly on our page.</p>
+
+            <div class="video-grid">
+                <!-- Card 1: Instagram Reel 1 -->
+                <div class="video-card instagram-card reveal">
+                    <iframe src="https://www.instagram.com/reel/DZXweF2yxui/embed" allowtransparency="true" frameborder="0" scrolling="no" class="reel-embed" title="Instagram Reel 1"></iframe>
+                </div>
+
+                <!-- Card 2: YouTube Short 1 -->
+                <div class="video-card youtube-card reveal">
+                    <iframe src="https://www.youtube.com/embed/buQKXBuqPfE" title="YouTube Short 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="reel-embed"></iframe>
+                </div>
+
+                <!-- Card 3: Instagram Reel 2 -->
+                <div class="video-card instagram-card reveal">
+                    <iframe src="https://www.instagram.com/reel/DNqsKTMSxo4/embed" allowtransparency="true" frameborder="0" scrolling="no" class="reel-embed" title="Instagram Reel 2"></iframe>
+                </div>
+
+                <!-- Card 4: YouTube Short 2 -->
+                <div class="video-card youtube-card reveal">
+                    <iframe src="https://www.youtube.com/embed/0Nk8Uwqmr08" title="YouTube Short 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="reel-embed"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- ============================================ -->
+       <!-- MARQUEE TICKER STRIP -->
+       <!-- ============================================ -->
+    <section class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>🍫 Kinder</span>
+                <span class="marquee-dot">·</span>
+                <span>Ferrero</span>
+                <span class="marquee-dot">·</span>
+                <span>Lindt</span>
+                <span class="marquee-dot">·</span>
+                <span>Toblerone</span>
+                <span class="marquee-dot">·</span>
+                <span>Milka</span>
+                <span class="marquee-dot">·</span>
+                <span>Haribo</span>
+                <span class="marquee-dot">·</span>
+                <span>Imported Drinks</span>
+                <span class="marquee-dot">·</span>
+                <span>Lollipops</span>
+                <span class="marquee-dot">·</span>
+                <span>Kunafa Chocolate</span>
+                <span class="marquee-dot">·</span>
+                <span>Luxury Gifting</span>
+                <span class="marquee-dot">·</span>
+                <span>Bulk Orders</span>
+                <span class="marquee-dot">·</span>
+                <span>All Tamilnadu, Telangana &amp; Andhra Pradesh Delivery</span>
+                <span class="marquee-dot">·</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- WHY KRISHNA CHOCOLATES — STATS & USPs -->
+    <!-- ============================================ -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <h2 class="section-title reveal">Why Krishna Chocolates</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-icon">📱</div>
+                    <div class="stat-number" id="insta-follower-count" data-target="15900" data-suffix="+">0</div>
+                    <div class="stat-label">Instagram Followers</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-number" data-target="100" data-suffix="+">0</div>
+                    <div class="stat-label">Imported Brands</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">⏳</div>
+                    <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                    <div class="stat-label">Years in Business</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">🚚</div>
+                    <div class="stat-number text-only" data-text-only="true" data-suffix="Tamilnadu, Telangana &amp; Andhra Pradesh">Tamilnadu, Telangana &amp; Andhra Pradesh</div>
+                    <div class="stat-label">Delivery Network</div>
+                </div>
+            </div>
+
+            <div class="usp-grid">
+                <div class="usp-card reveal">
+                    <div class="usp-icon">🏭</div>
+                    <h3 class="usp-title">Wholesale Only</h3>
+                    <p class="usp-desc">We deal exclusively in bulk orders. No retail, no minimum fuss — just serious wholesale pricing for serious buyers.</p>
+                </div>
+                <div class="usp-card reveal">
+                    <div class="usp-icon">✈️</div>
+                    <h3 class="usp-title">All Imported &amp; Luxury Brands</h3>
+                    <p class="usp-desc">From Ferrero to Lindt, Kinder to Toblerone — we stock 100+ globally recognized premium brands under one roof.</p>
+                </div>
+                <div class="usp-card reveal">
+                    <div class="usp-icon">💬</div>
+                    <h3 class="usp-title">Instant WhatsApp Pricing</h3>
+                    <p class="usp-desc">No waiting, no emails. Send us a message on WhatsApp and receive wholesale pricing within minutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PRODUCT CATEGORIES GRID -->
+    <!-- ============================================ -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title reveal">Explore Our Collection</h2>
+
+            <div class="products-grid">
+                <div class="product-card reveal" data-category="imported-chocolates" data-category-name="Imported Chocolates">
+                    <div class="product-image">
+                        <img src="imported_chocolates.png" alt="Premium imported chocolates collection" loading="lazy">
+                        <div class="product-overlay"></div>
+                        <div class="card-shimmer"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Imported Chocolates 🍫</h3>
+                        <button class="product-btn">View MOQ &amp; Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="luxury-gift-boxes" data-category-name="Luxury Gift Boxes">
+                    <div class="product-image">
+                        <img src="luxury_gift_boxes.png" alt="Luxury chocolate gift boxes" loading="lazy">
+                        <div class="product-overlay"></div>
+                        <div class="card-shimmer"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Luxury Gift Boxes 🎁</h3>
+                        <button class="product-btn">View MOQ &amp; Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="imported-drinks" data-category-name="Imported Drinks">
+                    <div class="product-image">
+                        <img src="imported_drinks.png" alt="Imported premium drinks" loading="lazy">
+                        <div class="product-overlay"></div>
+                        <div class="card-shimmer"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Imported Drinks 🥤</h3>
+                        <button class="product-btn">View MOQ &amp; Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="lollipops-candy" data-category-name="Lollipops & Candy">
+                    <div class="product-image">
+                        <img src="lollipops_candy.png" alt="Premium lollipops and candy" loading="lazy">
+                        <div class="product-overlay"></div>
+                        <div class="card-shimmer"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Lollipops &amp; Candy 🍭</h3>
+                        <button class="product-btn">View MOQ &amp; Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="kunafa-chocolate" data-category-name="Kunafa Chocolate">
+                    <div class="product-image">
+                        <img src="kunafa_chocolate.png" alt="Kunafa chocolate speciality" loading="lazy">
+                        <div class="product-overlay"></div>
+                        <div class="card-shimmer"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kunafa Chocolate ✨</h3>
+                        <button class="product-btn">View MOQ &amp; Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="seasonal-festive" data-category-name="Seasonal & Festive">
+                    <div class="product-image seasonal-gradient">
+                        <div class="product-overlay"></div>
+                        <div class="card-shimmer"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Seasonal &amp; Festive 🎄</h3>
+                        <button class="product-btn">View MOQ &amp; Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PRODUCT MODAL -->
+    <!-- ============================================ -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-icon">🍫</div>
+            <h3 class="modal-title" id="modalTitle">Category Name</h3>
+            <div class="modal-divider"></div>
+            <p class="modal-moq">Minimum Order Quantity (MOQ) applies</p>
+            <p class="modal-price">Price available on request</p>
+            <a href="#" class="modal-whatsapp-btn" id="modalWhatsApp" target="_blank" rel="noopener">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Ask Price on WhatsApp →
+            </a>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- HOW TO ORDER -->
+    <!-- ============================================ -->
+    <section class="how-to-section" id="how-to">
+        <div class="container">
+            <h2 class="section-title reveal">How to Order</h2>
+
+            <div class="steps-container">
+                <div class="step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">🔍</div>
+                    <h3 class="step-title">Browse Categories</h3>
+                    <p class="step-desc">Explore our curated collection of 100+ imported chocolate brands and luxury confectionery.</p>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="step reveal">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">💰</div>
+                    <h3 class="step-title">Click "Get Price"</h3>
+                    <p class="step-desc">Select the products you're interested in and tap the WhatsApp button for instant pricing.</p>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="step reveal">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">💬</div>
+                    <h3 class="step-title">Chat &amp; Place Order</h3>
+                    <p class="step-desc">Finalize your bulk order directly on WhatsApp. We handle packaging and delivery all over Tamilnadu, Telangana and Andhra Pradesh.</p>
+                </div>
+            </div>
+
+            <p class="steps-note reveal">
+                <em>MOQ applies on all products. Prices shared on WhatsApp only.</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ABOUT / STORE SECTION -->
+    <!-- ============================================ -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-placeholder">
+                            <div class="store-visual">
+                                <div class="shelf shelf-1"></div>
+                                <div class="shelf shelf-2"></div>
+                                <div class="shelf shelf-3"></div>
+                                <div class="store-text">🏪 Krishna Chocolates Store</div>
+                            </div>
+                        </div>
+                        <div class="about-image-border"></div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <h2 class="about-headline">Chennai's Wholesale Chocolate Hub</h2>
+                    <p class="about-body">
+                        Located at Sowcarpet — the heart of Chennai's trading district — <strong>Krishna Chocolates</strong> has been the go-to wholesale source for imported and luxury confectionery. We stock <strong>100+ global brands</strong> and supply retailers, event planners, corporates, and bulk buyers all over Tamilnadu, Telangana and Andhra Pradesh.
+                    </p>
+
+                    <div class="about-address">
+                        <div class="address-icon">📍</div>
+                        <div class="address-text">
+                            <strong>Shop No. S11, 2nd Floor, No. 166/169,</strong><br>
+                            NSC Bose Road, Opposite to Fathima Jewellers,<br>
+                            Sowcarpet, George Town, Chennai, Tamil Nadu - 600001
+                        </div>
+                    </div>
+
+                    <div class="about-timings">
+                        <div class="timings-icon">🕐</div>
+                        <div class="timings-text">
+                            <strong>Opens 11:00 AM</strong> · Mon–Sat
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/916382500922?text=Hi%20Krishna%20Chocolates!%20I'd%20like%20to%20visit%20your%20store.%20Please%20share%20directions." class="btn btn-outline about-btn" target="_blank" rel="noopener">Get Directions on WhatsApp →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- GOOGLE REVIEWS SECTION -->
+    <!-- ============================================ -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <h2 class="section-title reveal">Customer &amp; Partner Reviews</h2>
+            
+            <!-- Google Rating Summary Badge -->
+            <div class="reviews-summary reveal">
+                <div class="google-logo-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22c-.62-.63-1.09-1.37-1.19-2.63z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                    </svg>
+                </div>
+                <div class="summary-info">
+                    <div class="rating-stars">
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                    </div>
+                    <p class="rating-text"><strong>4.5 / 5.0</strong> based on Google Maps &amp; Justdial reviews</p>
+                </div>
+            </div>
+
+            <!-- Reviews Container Layout -->
+            <div class="reviews-container-layout">
+                <!-- Left Column: Reviews List -->
+                <div class="reviews-list-col" id="reviewsList">
+                    <!-- Review 1 -->
+                    <div class="review-card reveal">
+                        <div class="review-header">
+                            <div class="review-avatar">R</div>
+                            <div class="review-meta">
+                                <h4 class="review-author">Rajesh Kumar</h4>
+                                <p class="review-role">Owner, Sri Krishna Sweets &amp; Bakers (Chennai)</p>
+                            </div>
+                            <div class="review-source">
+                                <span class="google-g">G</span>
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">
+                            "Best importer of chocolates in Sowcarpet. We regularly source wholesale Kinder, Milka, and Ferrero Rocher in bulk for our festive hampers. Margins are excellent, packaging is robust, and they ship directly to our retail stores."
+                        </p>
+                        <div class="review-date">Verified Business Partner · 2 weeks ago</div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card reveal">
+                        <div class="review-header">
+                            <div class="review-avatar">A</div>
+                            <div class="review-meta">
+                                <h4 class="review-author">Anjali Sharma</h4>
+                                <p class="review-role">Founder, LuxuryGifts Co. (Bangalore)</p>
+                            </div>
+                            <div class="review-source">
+                                <span class="google-g">G</span>
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">
+                            "Krishna Chocolates has been our primary confectionery supplier for corporate gifting for 3 years. Their customer support on WhatsApp is super fast, prices are highly competitive, and the delivery to Bangalore is always on time."
+                        </p>
+                        <div class="review-date">Verified Corporate Buyer · 1 month ago</div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card reveal">
+                        <div class="review-header">
+                            <div class="review-avatar">K</div>
+                            <div class="review-meta">
+                                <h4 class="review-author">Karthik Raja</h4>
+                                <p class="review-role">Manager, Gourmet Supermarket (Coimbatore)</p>
+                            </div>
+                            <div class="review-source">
+                                <span class="google-g">G</span>
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">
+                            "We source all our premium imported snacks and chocolates from them. They have the largest collection of Lindt and Toblerone in Sowcarpet. Authentic products with good shelf life. Very reliable wholesale partner!"
+                        </p>
+                        <div class="review-date">Verified Retailer · 3 days ago</div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Give a Review Form -->
+                <div class="review-form-card reveal">
+                    <h3 class="form-title">Share Your Experience</h3>
+                    <p class="form-desc">Are you a customer? Share your retail or wholesale buying experience with us.</p>
+                    
+                    <form id="partnerReviewForm" class="review-form">
+                        <div class="form-group">
+                            <label class="form-label">Overall Rating</label>
+                            <div class="star-rating-select" id="starRatingSelect">
+                                <span class="star-btn" data-value="1">★</span>
+                                <span class="star-btn" data-value="2">★</span>
+                                <span class="star-btn" data-value="3">★</span>
+                                <span class="star-btn" data-value="4">★</span>
+                                <span class="star-btn" data-value="5">★</span>
+                            </div>
+                            <input type="hidden" name="rating" id="selectedRating" value="5">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">I am a...</label>
+                            <div class="review-type-selector">
+                                <button type="button" class="type-tab active" data-type="customer">Retail Customer</button>
+                                <button type="button" class="type-tab" data-type="partner">Wholesale Partner</button>
+                            </div>
+                            <input type="hidden" name="reviewerType" id="reviewerType" value="customer">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reviewerName" class="form-label">Your Name</label>
+                            <input type="text" id="reviewerName" name="name" class="form-input" placeholder="e.g. Ramesh Patel" required>
+                        </div>
+
+                        <div class="form-group" id="roleFormGroup">
+                            <label for="reviewerRole" class="form-label" id="roleLabel">Location (Optional)</label>
+                            <input type="text" id="reviewerRole" name="role" class="form-input" placeholder="e.g., Chennai or Sowcarpet">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reviewerComment" class="form-label">Your Review</label>
+                            <textarea id="reviewerComment" name="comment" class="form-input form-textarea" placeholder="Write about our products, wholesale pricing, logistics, or support..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold w-full" id="submitReviewBtn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Review Sources Links -->
+            <div class="reviews-cta reveal">
+                <a href="https://www.justdial.com/Chennai/Krishna-Chocolate-Sowcarpet/044PXX44-XX44-190620130635-Z6W9_BZDET" class="btn btn-outline" target="_blank" rel="noopener">View All Justdial Reviews →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- INSTAGRAM FEED TEASER -->
+    <!-- ============================================ -->
+    <section class="instagram-section" id="instagram">
+        <div class="container">
+            <h2 class="section-title reveal">Follow Our Journey</h2>
+
+            <div class="instagram-grid">
+                <div class="insta-card reveal">
+                    <img src="imported_chocolates.png" alt="Premium Imported Chocolates Display" class="insta-img" loading="lazy">
+                    <div class="insta-overlay"></div>
+                </div>
+                <div class="insta-card reveal">
+                    <img src="luxury_gift_boxes.png" alt="Luxury Chocolate Gift Boxes" class="insta-img" loading="lazy">
+                    <div class="insta-overlay"></div>
+                </div>
+                <div class="insta-card reveal">
+                    <img src="imported_drinks.png" alt="Premium Imported Drinks" class="insta-img" loading="lazy">
+                    <div class="insta-overlay"></div>
+                </div>
+                <div class="insta-card reveal">
+                    <img src="lollipops_candy.png" alt="Lollipops & Candy Selection" class="insta-img" loading="lazy">
+                    <div class="insta-overlay"></div>
+                </div>
+                <div class="insta-card reveal">
+                    <img src="kunafa_chocolate.png" alt="Kunafa Chocolate Speciality" class="insta-img" loading="lazy">
+                    <div class="insta-overlay"></div>
+                </div>
+                <div class="insta-card reveal">
+                    <img src="hero_background.png" alt="Luxury Wholesale Display" class="insta-img" loading="lazy">
+                    <div class="insta-overlay"></div>
+                </div>
+            </div>
+
+            <div class="instagram-handle reveal">
+                <span>@krishna.chocolate</span>
+            </div>
+
+            <div class="instagram-ctas reveal">
+                <a href="https://www.instagram.com/krishna.chocolate/" class="btn btn-outline" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    Follow on Instagram
+                </a>
+                <a href="https://www.youtube.com/@Krishnachocolate122" class="btn btn-outline" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    Watch on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CTA BANNER -->
+    <!-- ============================================ -->
+    <section class="cta-banner" id="cta-banner">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-headline">Ready to Stock the World's Best Chocolates?</h2>
+                <p class="cta-subtext">Send us a WhatsApp message and get wholesale pricing within minutes.</p>
+                <a href="https://wa.me/916382500922?text=Hi%20Krishna%20Chocolates!%20I'm%20interested%20in%20wholesale%20pricing.%20Please%20share%20details." class="cta-whatsapp-btn" target="_blank" rel="noopener">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    💬 Chat With Us Now — +91 63825 00922
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-monogram">K</span>
+                        <span class="logo-text">Krishna Chocolates</span>
+                    </div>
+                    <p class="footer-tagline">Premium Imported Chocolates · Wholesale Only</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#media-feed">Media</a></li>
+                        <li><a href="#products">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul>
+                        <li>
+                            <span class="footer-icon">📍</span>
+                            Shop No. S11, 2nd Floor, No. 166/169, NSC Bose Road, Opposite to Fathima Jewellers, Sowcarpet, George Town, Chennai, Tamil Nadu - 600001
+                        </li>
+                        <li>
+                            <span class="footer-icon">📞</span>
+                            <a href="tel:+916382500922">+91 63825 00922</a> <br>
+                            <span class="footer-icon" style="opacity:0">📞</span>
+                            <a href="tel:+919363265208">+91 93632 65208</a>
+                        </li>
+                        <li>
+                            <span class="footer-icon">💬</span>
+                            <a href="https://wa.me/916382500922" target="_blank" rel="noopener">WhatsApp Us</a>
+                        </li>
+                        <li>
+                            <span class="footer-icon">📸</span>
+                            <a href="https://www.instagram.com/krishna.chocolate/" target="_blank" rel="noopener">@krishna.chocolate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+ 
+            <div class="footer-bottom">
+                <p>&copy; 2025 Krishna Chocolates · Sowcarpet, Chennai</p>
+                <p class="footer-disclaimer">All products available for wholesale bulk orders only. MOQ applicable.</p>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- ============================================ -->
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <!-- ============================================ -->
+    <a href="https://wa.me/916382500922?text=Hi%20Krishna%20Chocolates!%20I'd%20like%20to%20know%20about%20wholesale%20pricing." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="whatsapp-tooltip">Get Price Instantly</span>
+    </a>
+ 
+    <!-- Toast Notification for Review Submission -->
+    <div class="review-toast" id="reviewToast">
+        <div class="toast-icon">✨</div>
+        <div>
+            <h4 class="toast-title">Review Published!</h4>
+            <p class="toast-msg">Thank you. Your wholesale partner feedback has been published in real-time.</p>
+        </div>
+    </div>
+ 
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
